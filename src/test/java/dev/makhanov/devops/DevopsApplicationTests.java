@@ -9,7 +9,10 @@ class DevopsApplicationTests {
 
     @Test
     void testAdd() {
-        Assertions.assertEquals(2, 2);
+        int a = 1;
+        int b = 1;
+        int expectedRes = 2;
+        Assertions.assertEquals(expectedRes, SomeLogic.addTwoNumber(a, b));
     }
 
 }

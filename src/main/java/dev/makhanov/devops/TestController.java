@@ -8,6 +8,9 @@ public class TestController {
 
     @GetMapping("/")
     String hello() {
-        return "hello";
+        int a = 5;
+        int b = 6;
+        int res = SomeLogic.addTwoNumber(a, b);
+        return a + " + " + b + " = " + res;
     }
 }

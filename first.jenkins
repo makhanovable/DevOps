@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'echo madi'
+                sh './gradlew test'
             }
         }
         stage("Second step") {

@@ -16,6 +16,10 @@ pipeline {
                 sh './gradlew test'
             }
         }
-
+        stage("Second step") {
+            steps {
+                sh 'gradle bootRun'
+            }
+        }
     }
 }
